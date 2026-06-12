@@ -1,1 +1,262 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Conectando Campo e Cidade</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f9f4;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:15px;
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2e7d32;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:40px;
+    color:#2e7d32;
+    font-size:2.2rem;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.sobre img{
+    width:100%;
+    border-radius:15px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>🌱 Agrinho 2026</h2>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>AGRINHO 2026</h1>
+        <p>Conectando o Campo e a Cidade para um Futuro Sustentável</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2 class="titulo">Sobre o Projeto</h2>
+
+    <div class="sobre">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+
+        <div>
+            <p>
+                O Agrinho é um programa educacional que incentiva a
+                conscientização sobre sustentabilidade, cidadania,
+                inovação e a importância do agronegócio para a sociedade.
+            </p>
+
+            <br>
+
+            <p>
+                Em 2026, o tema destaca a união entre campo e cidade,
+                mostrando como a tecnologia, a educação e a preservação
+                ambiental contribuem para um futuro melhor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2 class="titulo">Benefícios da Integração Campo e Cidade</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌾 Produção de Alimentos</h3>
+            <p>
+                O campo abastece as cidades com alimentos de qualidade.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Tecnologia Rural</h3>
+            <p>
+                Máquinas modernas aumentam a produtividade e reduzem impactos ambientais.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌎 Sustentabilidade</h3>
+            <p>
+                Práticas sustentáveis garantem recursos para futuras gerações.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Educação</h3>
+            <p>
+                O conhecimento conecta pessoas e promove desenvolvimento.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="galeria">
+    <h2 class="titulo">Galeria do Campo e Cidade</h2>
+
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95">
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Mensagem para o Futuro</h2>
+
+    <div class="card">
+        <p style="text-align:center; font-size:1.2rem;">
+            "Quando campo e cidade trabalham juntos, cultivamos
+            desenvolvimento, sustentabilidade e qualidade de vida para todos."
+        </p>
+    </div>
+</section>
+
+<footer>
+    <h3>🌱 Agrinho 2026</h3>
+    <p>Projeto Educacional • Sustentabilidade • Inovação</p>
+    <p>Desenvolvido para o Concurso Agrinho 2026</p>
+</footer>
+
+</body>
+</html>
