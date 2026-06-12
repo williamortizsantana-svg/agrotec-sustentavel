@@ -1,1 +1,151 @@
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4fdf4;
+    color:#333;
+}
+
+header{
+    background:#1b5e20;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:70px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.banner{
+    height:90vh;
+    background:url('img/banner.png') center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner-texto{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:15px;
+    color:white;
+}
+
+.banner-texto h1{
+    font-size:3rem;
+}
+
+.banner-texto p{
+    margin:15px 0;
+    font-size:1.2rem;
+}
+
+.botao{
+    display:inline-block;
+    padding:12px 25px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.botao:hover{
+    background:#2e7d32;
+}
+
+.secao{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.secao h2{
+    margin-bottom:20px;
+    color:#1b5e20;
+}
+
+.verde{
+    background:#e8f5e9;
+}
+
+.imagem-projeto{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    margin:20px auto;
+    display:block;
+}
+
+input{
+    padding:12px;
+    width:250px;
+    margin-top:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+#resultado{
+    margin-top:25px;
+    color:#1b5e20;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .banner-texto h1{
+        font-size:2rem;
+    }
+}
